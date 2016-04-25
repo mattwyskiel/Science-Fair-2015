@@ -1,0 +1,7 @@
+#!/bin/sh
+
+BUILDGOPATH="$1"
+go install $BUILDGOPATH
+SCRIPTNAME="$2"
+$GOPATH/bin/$SCRIPTNAME
+echo "done!"
